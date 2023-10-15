@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "mightycombine",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MightyCombine/MightyCombine.git",
+      "state" : {
+        "revision" : "c450047d5a3758e842cf30740c9bc017f0c73b8f",
+        "version" : "0.3.4"
+      }
+    }
+  ],
+  "version" : 2
+}

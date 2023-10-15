@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "917C7E11-2C92-4209-B6D4-C729B679D669"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB923D64-7BFF-45E8-B432-7A16260FB9EF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../EasyUI/Sources/EasyUI/SwiftUI/Components/BottomSheetView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "bottomSheet(_:_:@ViewBuilder:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "175124E9-5534-4FE2-9A49-22075A434906"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../EasyUI/Sources/EasyUI/SwiftUI/Components/BottomSheetView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "BottomSheet()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "175124E9-5534-4FE2-9A49-22075A434906 - d6f84b0a71904a60"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EasyUI.BottomSheetView.BottomSheet() -&gt; some"
+                  moduleName = "SwiftUIPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/insub/Desktop/EasyUI/Sources/EasyUI/SwiftUI/Components/BottomSheetView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "2492">
+               </Location>
+               <Location
+                  uuid = "175124E9-5534-4FE2-9A49-22075A434906 - 56c7c84181f95ff6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.CGSize) -&gt; () in EasyUI.BottomSheetView.BottomSheet() -&gt; some"
+                  moduleName = "SwiftUIPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/insub/Desktop/EasyUI/Sources/EasyUI/SwiftUI/Components/BottomSheetView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

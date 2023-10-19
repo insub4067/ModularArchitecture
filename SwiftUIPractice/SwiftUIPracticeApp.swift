@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import EasyUI
 
 @main
 struct SwiftUIPracticeApp: App {

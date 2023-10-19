@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB1D80662AE02C4300D4EDE5 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D80652AE02C4300D4EDE5 /* Mock.swift */; };
+		FB312A822AE0FA2F004FD764 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = FB312A812AE0FA2F004FD764 /* Network */; };
+		FB312A842AE0FA5F004FD764 /* AssetModule in Frameworks */ = {isa = PBXBuildFile; productRef = FB312A832AE0FA5F004FD764 /* AssetModule */; };
+		FB312A8B2AE104F0004FD764 /* MightyCombine in Frameworks */ = {isa = PBXBuildFile; productRef = FB312A8A2AE104F0004FD764 /* MightyCombine */; };
+		FB312A8D2AE104F0004FD764 /* MightySwift in Frameworks */ = {isa = PBXBuildFile; productRef = FB312A8C2AE104F0004FD764 /* MightySwift */; };
+		FB312A8F2AE10968004FD764 /* FeatureGroup in Frameworks */ = {isa = PBXBuildFile; productRef = FB312A8E2AE10968004FD764 /* FeatureGroup */; };
 		FB4228B02ADC107000322462 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4228AF2ADC107000322462 /* ContentViewModel.swift */; };
-		FB4228B82ADC18B700322462 /* UserModule in Frameworks */ = {isa = PBXBuildFile; productRef = FB4228B72ADC18B700322462 /* UserModule */; };
-		FB4228BB2ADC18DB00322462 /* MightyCombine in Frameworks */ = {isa = PBXBuildFile; productRef = FB4228BA2ADC18DB00322462 /* MightyCombine */; };
-		FB4228BD2ADC18DB00322462 /* MightySwift in Frameworks */ = {isa = PBXBuildFile; productRef = FB4228BC2ADC18DB00322462 /* MightySwift */; };
-		FB4228BF2ADC1BD400322462 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = FB4228BE2ADC1BD400322462 /* DesignSystem */; };
+		FBBBD27C2AE0F8E1000E0987 /* MightyCombine in Frameworks */ = {isa = PBXBuildFile; productRef = FBBBD27B2AE0F8E1000E0987 /* MightyCombine */; };
+		FBBBD27E2AE0F8E1000E0987 /* MightySwift in Frameworks */ = {isa = PBXBuildFile; productRef = FBBBD27D2AE0F8E1000E0987 /* MightySwift */; };
 		FBC300892AD844C70055FEDE /* SwiftUIPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC300882AD844C70055FEDE /* SwiftUIPracticeApp.swift */; };
 		FBC3008B2AD844C70055FEDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3008A2AD844C70055FEDE /* ContentView.swift */; };
 		FBC3008D2AD844C70055FEDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC3008C2AD844C70055FEDE /* Assets.xcassets */; };
@@ -19,9 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FB4228A82ADC0D6A00322462 /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DesignSystem; path = SwiftUIPractice/DesignSystem; sourceTree = "<group>"; };
+		FB1D80652AE02C4300D4EDE5 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		FB312A7C2AE0F9D5004FD764 /* Network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Network; path = SwiftUIPractice/Network; sourceTree = "<group>"; };
+		FB312A7D2AE0F9DC004FD764 /* UserModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UserModule; path = SwiftUIPractice/UserModule; sourceTree = "<group>"; };
+		FB312A7F2AE0F9EA004FD764 /* AssetModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AssetModule; path = SwiftUIPractice/AssetModule; sourceTree = "<group>"; };
+		FB312A882AE0FBBF004FD764 /* DataBase */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DataBase; path = SwiftUIPractice/DataBase; sourceTree = "<group>"; };
+		FB312A892AE0FF0F004FD764 /* FeatureGroup */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FeatureGroup; path = SwiftUIPractice/FeatureGroup; sourceTree = "<group>"; };
 		FB4228AF2ADC107000322462 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
-		FB4228B42ADC148600322462 /* UserModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UserModule; path = SwiftUIPractice/UserModule; sourceTree = "<group>"; };
 		FBC300852AD844C70055FEDE /* SwiftUIPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC300882AD844C70055FEDE /* SwiftUIPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeApp.swift; sourceTree = "<group>"; };
 		FBC3008A2AD844C70055FEDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,24 +43,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB4228BD2ADC18DB00322462 /* MightySwift in Frameworks */,
-				FB4228BB2ADC18DB00322462 /* MightyCombine in Frameworks */,
-				FB4228B82ADC18B700322462 /* UserModule in Frameworks */,
-				FB4228BF2ADC1BD400322462 /* DesignSystem in Frameworks */,
+				FB312A8D2AE104F0004FD764 /* MightySwift in Frameworks */,
+				FB312A822AE0FA2F004FD764 /* Network in Frameworks */,
+				FB312A842AE0FA5F004FD764 /* AssetModule in Frameworks */,
+				FBBBD27E2AE0F8E1000E0987 /* MightySwift in Frameworks */,
+				FB312A8B2AE104F0004FD764 /* MightyCombine in Frameworks */,
+				FB312A8F2AE10968004FD764 /* FeatureGroup in Frameworks */,
+				FBBBD27C2AE0F8E1000E0987 /* MightyCombine in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB312A852AE0FB13004FD764 /* Featues */ = {
+			isa = PBXGroup;
+			children = (
+				FB312A892AE0FF0F004FD764 /* FeatureGroup */,
+				FB312A7F2AE0F9EA004FD764 /* AssetModule */,
+				FB312A7D2AE0F9DC004FD764 /* UserModule */,
+			);
+			name = Featues;
+			sourceTree = "<group>";
+		};
+		FB312A862AE0FB21004FD764 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FB312A882AE0FBBF004FD764 /* DataBase */,
+				FB312A7C2AE0F9D5004FD764 /* Network */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		FBC3007C2AD844C70055FEDE = {
 			isa = PBXGroup;
 			children = (
-				FB4228B42ADC148600322462 /* UserModule */,
-				FB4228A82ADC0D6A00322462 /* DesignSystem */,
+				FB312A862AE0FB21004FD764 /* Data */,
+				FB312A852AE0FB13004FD764 /* Featues */,
 				FBC300872AD844C70055FEDE /* SwiftUIPractice */,
 				FBC300862AD844C70055FEDE /* Products */,
-				FBC300A12AD85DD10055FEDE /* Frameworks */,
+				FBD85F982AE0ED1000B41E13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +100,7 @@
 				FBC300882AD844C70055FEDE /* SwiftUIPracticeApp.swift */,
 				FBC3008A2AD844C70055FEDE /* ContentView.swift */,
 				FB4228AF2ADC107000322462 /* ContentViewModel.swift */,
+				FB1D80652AE02C4300D4EDE5 /* Mock.swift */,
 				FBC3008C2AD844C70055FEDE /* Assets.xcassets */,
 				FBC3008E2AD844C70055FEDE /* SwiftUIPractice.entitlements */,
 				FBC3008F2AD844C70055FEDE /* Preview Content */,
@@ -85,7 +116,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		FBC300A12AD85DD10055FEDE /* Frameworks */ = {
+		FBD85F982AE0ED1000B41E13 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -109,10 +140,13 @@
 			);
 			name = SwiftUIPractice;
 			packageProductDependencies = (
-				FB4228B72ADC18B700322462 /* UserModule */,
-				FB4228BA2ADC18DB00322462 /* MightyCombine */,
-				FB4228BC2ADC18DB00322462 /* MightySwift */,
-				FB4228BE2ADC1BD400322462 /* DesignSystem */,
+				FBBBD27B2AE0F8E1000E0987 /* MightyCombine */,
+				FBBBD27D2AE0F8E1000E0987 /* MightySwift */,
+				FB312A812AE0FA2F004FD764 /* Network */,
+				FB312A832AE0FA5F004FD764 /* AssetModule */,
+				FB312A8A2AE104F0004FD764 /* MightyCombine */,
+				FB312A8C2AE104F0004FD764 /* MightySwift */,
+				FB312A8E2AE10968004FD764 /* FeatureGroup */,
 			);
 			productName = SwiftUIPractice;
 			productReference = FBC300852AD844C70055FEDE /* SwiftUIPractice.app */;
@@ -143,7 +177,7 @@
 			);
 			mainGroup = FBC3007C2AD844C70055FEDE;
 			packageReferences = (
-				FB4228B92ADC18DB00322462 /* XCRemoteSwiftPackageReference "MightyCombine" */,
+				FBBBD27A2AE0F8E1000E0987 /* XCRemoteSwiftPackageReference "MightyCombine" */,
 			);
 			productRefGroup = FBC300862AD844C70055FEDE /* Products */;
 			projectDirPath = "";
@@ -174,6 +208,7 @@
 				FBC3008B2AD844C70055FEDE /* ContentView.swift in Sources */,
 				FBC300892AD844C70055FEDE /* SwiftUIPracticeApp.swift in Sources */,
 				FB4228B02ADC107000322462 /* ContentViewModel.swift in Sources */,
+				FB1D80662AE02C4300D4EDE5 /* Mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,34 +431,48 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FB4228B92ADC18DB00322462 /* XCRemoteSwiftPackageReference "MightyCombine" */ = {
+		FBBBD27A2AE0F8E1000E0987 /* XCRemoteSwiftPackageReference "MightyCombine" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/MightyCombine/MightyCombine.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.4;
+				minimumVersion = 0.4.7;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FB4228B72ADC18B700322462 /* UserModule */ = {
+		FB312A812AE0FA2F004FD764 /* Network */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = UserModule;
+			productName = Network;
 		};
-		FB4228BA2ADC18DB00322462 /* MightyCombine */ = {
+		FB312A832AE0FA5F004FD764 /* AssetModule */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FB4228B92ADC18DB00322462 /* XCRemoteSwiftPackageReference "MightyCombine" */;
+			productName = AssetModule;
+		};
+		FB312A8A2AE104F0004FD764 /* MightyCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBBBD27A2AE0F8E1000E0987 /* XCRemoteSwiftPackageReference "MightyCombine" */;
 			productName = MightyCombine;
 		};
-		FB4228BC2ADC18DB00322462 /* MightySwift */ = {
+		FB312A8C2AE104F0004FD764 /* MightySwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FB4228B92ADC18DB00322462 /* XCRemoteSwiftPackageReference "MightyCombine" */;
+			package = FBBBD27A2AE0F8E1000E0987 /* XCRemoteSwiftPackageReference "MightyCombine" */;
 			productName = MightySwift;
 		};
-		FB4228BE2ADC1BD400322462 /* DesignSystem */ = {
+		FB312A8E2AE10968004FD764 /* FeatureGroup */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = DesignSystem;
+			productName = FeatureGroup;
+		};
+		FBBBD27B2AE0F8E1000E0987 /* MightyCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBBBD27A2AE0F8E1000E0987 /* XCRemoteSwiftPackageReference "MightyCombine" */;
+			productName = MightyCombine;
+		};
+		FBBBD27D2AE0F8E1000E0987 /* MightySwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBBBD27A2AE0F8E1000E0987 /* XCRemoteSwiftPackageReference "MightyCombine" */;
+			productName = MightySwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

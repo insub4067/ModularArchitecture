@@ -6,37 +6,23 @@
 //
 
 import SwiftUI
-import DesignSystem
-
 struct ContentView: View {
     
-    @StateObject var viewModel = ContentViewModel()
+    @StateObject var viewModel = ContentViewModel.build()
     
     var body: some View {
-        VStack {
-            Group {
-                if let user = viewModel.user {
-                    Text("login: " + user.login)
-                    Text("id: " + "\(user.id)")
-                } else {
-                    Text("Search User")
-                }
-            }.modifier(TitleModifier())
+        VStack(spacing: 16) {
             
-            Spacer()
+            Text(viewModel.user?.login ?? "")
+            Button("Get User and Register Bitcoin ") {
+                viewModel.registerBitcoin()
+            }
             
-            TextField("Username", text: $viewModel.usernameInput)
-                .modifier(TextFieldModifier())
-            
-            Button {
-                viewModel.didTapButton()
-            } label: {
-                Text("Tap to Get User")
-                    .modifier(ButtonModifier())
+            Text(viewModel.asset?.assetType ?? "")
+            Button("Registered Bitcoin") {
+                viewModel.getResgisteredAsset()
             }
         }
-        .padding()
-        .frame(height: 150)
     }
 }
 

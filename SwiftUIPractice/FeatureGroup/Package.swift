@@ -4,27 +4,34 @@
 import PackageDescription
 
 let package = Package(
-    name: "UserModule",
+    name: "FeatureGroup",
     platforms: [.iOS(.v13)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "UserModule",
-            targets: ["UserModule"]
-        ),
-    ], 
+            name: "FeatureGroup",
+            targets: ["FeatureGroup"]),
+    ],
     dependencies: [
-        .package(url: "https://github.com/MightyCombine/MightyCombine.git", from: "0.4.7")
+        .package(name: "AssetModule", path: "../AssetModule"),
+        .package(name: "UserModule", path: "../UserModule"),
+        .package(name: "Network", path: "../Network"),
+        .package(name: "DataBase", path: "../DataBase"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "UserModule",
-            dependencies: ["MightyCombine"]
+            name: "FeatureGroup",
+            dependencies: [
+                "AssetModule",
+                "UserModule",
+                "Network",
+                "DataBase"
+            ]
         ),
         .testTarget(
-            name: "UserModuleTests",
-            dependencies: ["UserModule"]),
+            name: "FeatureGroupTests",
+            dependencies: ["FeatureGroup"]),
     ]
 )

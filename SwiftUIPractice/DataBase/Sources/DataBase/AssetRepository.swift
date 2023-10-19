@@ -11,9 +11,10 @@ import AssetModule
 
 public class AssetRepository: AssetRepositoriable {
 
-    private var db: [Asset] = []
+    public static let shared = AssetRepository()
+    private init() { }
     
-    public init() { }
+    private var db: [Asset] = []
     
     public func store(_ asset: Asset) {
         db.append(asset)

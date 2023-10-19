@@ -28,14 +28,12 @@ class ContentViewModel: ObservableObject {
     }
     
     static func build() -> ContentViewModel {
-        
-        let assetRepo = AssetRepository()
         let getUserAndStoreAssetUseCase = GetUserAndStoreAssetUseCase.init(
             getUserUseCase: .init(userNetwork: UserNetwork()),
-            storeAssetUseCase: .init(repository: assetRepo)
+            storeAssetUseCase: .init(repository: AssetRepository.shared)
         )
-        let getAssetByUserIdUseCase = GetAssetByUserIdUseCase.init(repository: assetRepo)
-        return ContentViewModel(
+        let getAssetByUserIdUseCase = GetAssetByUserIdUseCase.init(repository: AssetRepository.shared)
+        return .init(
             getUserAndStoreAssetUseCase: getUserAndStoreAssetUseCase,
             getAssetByUserIdUseCase: getAssetByUserIdUseCase
         )

@@ -26,6 +26,7 @@ public class UserNetwork: UserNetworkable {
         EndPoint
             .init("https://api.github.com")
             .urlPaths(["/users", "/\(username)"])
+            .urlSession(self.session)
             .requestPublisher(expect: User.self)
     }}
 }

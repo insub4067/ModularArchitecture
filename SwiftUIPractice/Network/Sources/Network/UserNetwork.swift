@@ -22,13 +22,11 @@ public class UserNetwork: UserNetworkable {
         self.session = session
     }
     
-    public var getUser: (String) -> AnyPublisher<User, Error> {{ username in
+    public lazy var getUser: (String) -> AnyPublisher<User, Error> = { username in
         EndPoint
             .init("https://api.github.com")
             .urlPaths(["/users", "/\(username)"])
             .urlSession(self.session)
             .requestPublisher(expect: User.self)
-    }}
+    }
 }
-
-
